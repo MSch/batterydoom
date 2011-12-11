@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C53F47901494F01400C6657A /* BDPowerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C53F478F1494F01400C6657A /* BDPowerInfo.m */; };
+		C53F47931494F38F00C6657A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53F47911494F37E00C6657A /* IOKit.framework */; };
 		C57ACFAC1494BE60003DBA8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57ACFAB1494BE60003DBA8A /* Cocoa.framework */; };
 		C57ACFB61494BE60003DBA8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C57ACFB41494BE60003DBA8A /* InfoPlist.strings */; };
 		C57ACFB81494BE60003DBA8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C57ACFB71494BE60003DBA8A /* main.m */; };
@@ -19,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C53F478E1494F01400C6657A /* BDPowerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDPowerInfo.h; sourceTree = "<group>"; };
+		C53F478F1494F01400C6657A /* BDPowerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDPowerInfo.m; sourceTree = "<group>"; };
+		C53F47911494F37E00C6657A /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		C57ACFA71494BE60003DBA8A /* Battery Doom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battery Doom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57ACFAB1494BE60003DBA8A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C57ACFB31494BE60003DBA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,8 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C57ACFD31494C826003DBA8A /* Quartz.framework in Frameworks */,
 				C57ACFAC1494BE60003DBA8A /* Cocoa.framework in Frameworks */,
+				C53F47931494F38F00C6657A /* IOKit.framework in Frameworks */,
+				C57ACFD31494C826003DBA8A /* Quartz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				C57ACFAB1494BE60003DBA8A /* Cocoa.framework */,
+				C53F47911494F37E00C6657A /* IOKit.framework */,
 				C57ACFD21494C826003DBA8A /* Quartz.framework */,
 			);
 			name = Frameworks;
@@ -80,6 +87,8 @@
 			children = (
 				C57ACFBD1494BE60003DBA8A /* BDAppDelegate.h */,
 				C57ACFBE1494BE60003DBA8A /* BDAppDelegate.m */,
+				C53F478E1494F01400C6657A /* BDPowerInfo.h */,
+				C53F478F1494F01400C6657A /* BDPowerInfo.m */,
 				C57ACFCF1494C331003DBA8A /* BDView.h */,
 				C57ACFD01494C331003DBA8A /* BDView.m */,
 				C57ACFDF1494D5C5003DBA8A /* BDWindow.h */,
@@ -170,6 +179,7 @@
 				C57ACFBF1494BE60003DBA8A /* BDAppDelegate.m in Sources */,
 				C57ACFD11494C331003DBA8A /* BDView.m in Sources */,
 				C57ACFE11494D5C5003DBA8A /* BDWindow.m in Sources */,
+				C53F47901494F01400C6657A /* BDPowerInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
