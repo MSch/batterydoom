@@ -29,6 +29,13 @@ static __strong BDWindow *sharedWindow;
 
 #pragma mark -
 
++ (void)setVisible:(BOOL)visible {
+    if (visible)
+        [self show];
+    else
+        [self hide];
+}
+
 + (void)show {
     if (sharedWindow)
         return;

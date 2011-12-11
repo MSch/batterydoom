@@ -1,16 +1,29 @@
 #import "BDAppDelegate.h"
 #import "BDPowerInfo.h"
 
-@implementation BDAppDelegate
+static NSInteger const BDChargeThreshold = 5;
+static NSInteger const BDPollingInterval = 5;
+
+@interface BDAppDelegate ()
+- (void)checkForLowCharge;
+@end
+
+@implementation BDAppDelegate {
+    NSTimer *timer;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    [BDWindow show];
-    [BDWindow performSelector:@selector(hide) withObject:nil afterDelay:2];
-    
+    timer = [NSTimer scheduledTimerWithTimeInterval:BDPollingInterval
+                                             target:self
+                                           selector:@selector(checkForLowCharge)
+                                           userInfo:nil
+                                            repeats:YES];
+    [self checkForLowCharge];
+}
+
+- (void)checkForLowCharge {
     BDPowerInfo *powerInfo = [BDPowerInfo sharedPowerInfo];
-    NSLog(@"%ld", powerInfo.remainingCharge);
-    NSLog(@"%d", powerInfo.chargingBattery);
-    NSLog(@"%d", powerInfo.runningOnBattery);
+    [BDWindow setVisible:(powerInfo.runningOnBattery && !powerInfo.chargingBattery && (powerInfo.remainingCharge < BDChargeThreshold))];
 }
 
 @end

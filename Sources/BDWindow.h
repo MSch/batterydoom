@@ -5,6 +5,7 @@
 
 @property (nonatomic, strong) BDView *contentView;
 
++ (void)setVisible:(BOOL)visible;
 + (void)show;
 + (void)hide;
 
