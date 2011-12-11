@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C57ACFAC1494BE60003DBA8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57ACFAB1494BE60003DBA8A /* Cocoa.framework */; };
+		C57ACFB61494BE60003DBA8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C57ACFB41494BE60003DBA8A /* InfoPlist.strings */; };
+		C57ACFB81494BE60003DBA8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C57ACFB71494BE60003DBA8A /* main.m */; };
+		C57ACFBC1494BE60003DBA8A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C57ACFBA1494BE60003DBA8A /* Credits.rtf */; };
+		C57ACFBF1494BE60003DBA8A /* BDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57ACFBE1494BE60003DBA8A /* BDAppDelegate.m */; };
+		C57ACFC21494BE61003DBA8A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C57ACFC01494BE61003DBA8A /* MainMenu.xib */; };
+		C57ACFD11494C331003DBA8A /* BDView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57ACFD01494C331003DBA8A /* BDView.m */; };
+		C57ACFD31494C826003DBA8A /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57ACFD21494C826003DBA8A /* Quartz.framework */; };
+		C57ACFE11494D5C5003DBA8A /* BDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C57ACFE01494D5C5003DBA8A /* BDWindow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C57ACFA71494BE60003DBA8A /* Battery Doom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battery Doom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57ACFAB1494BE60003DBA8A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C57ACFB31494BE60003DBA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C57ACFB51494BE60003DBA8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C57ACFB71494BE60003DBA8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C57ACFB91494BE60003DBA8A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		C57ACFBB1494BE60003DBA8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C57ACFBD1494BE60003DBA8A /* BDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAppDelegate.h; sourceTree = "<group>"; };
+		C57ACFBE1494BE60003DBA8A /* BDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAppDelegate.m; sourceTree = "<group>"; };
+		C57ACFC11494BE61003DBA8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C57ACFCF1494C331003DBA8A /* BDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDView.h; sourceTree = "<group>"; };
+		C57ACFD01494C331003DBA8A /* BDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDView.m; sourceTree = "<group>"; };
+		C57ACFD21494C826003DBA8A /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		C57ACFDF1494D5C5003DBA8A /* BDWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDWindow.h; sourceTree = "<group>"; };
+		C57ACFE01494D5C5003DBA8A /* BDWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDWindow.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C57ACFA41494BE60003DBA8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57ACFD31494C826003DBA8A /* Quartz.framework in Frameworks */,
+				C57ACFAC1494BE60003DBA8A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C57ACF9C1494BE60003DBA8A = {
+			isa = PBXGroup;
+			children = (
+				C57ACFB11494BE60003DBA8A /* Sources */,
+				C57ACFAA1494BE60003DBA8A /* Frameworks */,
+				C57ACFA81494BE60003DBA8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C57ACFA81494BE60003DBA8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C57ACFA71494BE60003DBA8A /* Battery Doom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C57ACFAA1494BE60003DBA8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C57ACFAB1494BE60003DBA8A /* Cocoa.framework */,
+				C57ACFD21494C826003DBA8A /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C57ACFB11494BE60003DBA8A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C57ACFBD1494BE60003DBA8A /* BDAppDelegate.h */,
+				C57ACFBE1494BE60003DBA8A /* BDAppDelegate.m */,
+				C57ACFCF1494C331003DBA8A /* BDView.h */,
+				C57ACFD01494C331003DBA8A /* BDView.m */,
+				C57ACFDF1494D5C5003DBA8A /* BDWindow.h */,
+				C57ACFE01494D5C5003DBA8A /* BDWindow.m */,
+				C57ACFC01494BE61003DBA8A /* MainMenu.xib */,
+				C57ACFB21494BE60003DBA8A /* Supporting Files */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C57ACFB21494BE60003DBA8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C57ACFB31494BE60003DBA8A /* Info.plist */,
+				C57ACFB41494BE60003DBA8A /* InfoPlist.strings */,
+				C57ACFB71494BE60003DBA8A /* main.m */,
+				C57ACFB91494BE60003DBA8A /* Prefix.pch */,
+				C57ACFBA1494BE60003DBA8A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C57ACFA61494BE60003DBA8A /* Battery Doom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C57ACFC51494BE61003DBA8A /* Build configuration list for PBXNativeTarget "Battery Doom" */;
+			buildPhases = (
+				C57ACFA31494BE60003DBA8A /* Sources */,
+				C57ACFA41494BE60003DBA8A /* Frameworks */,
+				C57ACFA51494BE60003DBA8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Battery Doom";
+			productName = "Battery Doom";
+			productReference = C57ACFA71494BE60003DBA8A /* Battery Doom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C57ACF9E1494BE60003DBA8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = appscape;
+			};
+			buildConfigurationList = C57ACFA11494BE60003DBA8A /* Build configuration list for PBXProject "Battery Doom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C57ACF9C1494BE60003DBA8A;
+			productRefGroup = C57ACFA81494BE60003DBA8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C57ACFA61494BE60003DBA8A /* Battery Doom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C57ACFA51494BE60003DBA8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57ACFB61494BE60003DBA8A /* InfoPlist.strings in Resources */,
+				C57ACFBC1494BE60003DBA8A /* Credits.rtf in Resources */,
+				C57ACFC21494BE61003DBA8A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C57ACFA31494BE60003DBA8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57ACFB81494BE60003DBA8A /* main.m in Sources */,
+				C57ACFBF1494BE60003DBA8A /* BDAppDelegate.m in Sources */,
+				C57ACFD11494C331003DBA8A /* BDView.m in Sources */,
+				C57ACFE11494D5C5003DBA8A /* BDWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C57ACFB41494BE60003DBA8A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C57ACFB51494BE60003DBA8A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C57ACFBA1494BE60003DBA8A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C57ACFBB1494BE60003DBA8A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C57ACFC01494BE61003DBA8A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C57ACFC11494BE61003DBA8A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C57ACFC31494BE61003DBA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C57ACFC41494BE61003DBA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C57ACFC61494BE61003DBA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/Prefix.pch;
+				INFOPLIST_FILE = Sources/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C57ACFC71494BE61003DBA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/Prefix.pch;
+				INFOPLIST_FILE = Sources/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C57ACFA11494BE60003DBA8A /* Build configuration list for PBXProject "Battery Doom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C57ACFC31494BE61003DBA8A /* Debug */,
+				C57ACFC41494BE61003DBA8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C57ACFC51494BE61003DBA8A /* Build configuration list for PBXNativeTarget "Battery Doom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C57ACFC61494BE61003DBA8A /* Debug */,
+				C57ACFC71494BE61003DBA8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C57ACF9E1494BE60003DBA8A /* Project object */;
+}
