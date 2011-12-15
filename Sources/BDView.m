@@ -16,7 +16,7 @@
     [[NSColor colorWithCalibratedRed:1.0
                                green:0.0
                                 blue:0.0
-                               alpha:0.5] setStroke];
+                               alpha:1.0] setStroke];
 	
 	[NSBezierPath setDefaultLineWidth:width];
 	[[NSBezierPath bezierPathWithRect:NSMakeRect(width * .5, width * .5, screenSize.width - width, screenSize.height - width)] stroke];
