@@ -2,8 +2,17 @@
 #import "BDWindow.h"
 
 static __strong BDWindow *sharedWindow;
+static __strong NSSound *alertSound;
 
-@implementation BDWindow
+@interface BDWindow ()
+- (void)tick:(NSTimer *)timer;
+@end
+
+@implementation BDWindow {
+	NSTimer *tick;
+	CGFloat time;
+	NSDate *lastFrame;
+}
 @dynamic contentView;
 
 - (id)init {
@@ -22,10 +31,23 @@ static __strong BDWindow *sharedWindow;
     self.ignoresMouseEvents = YES;
     self.collectionBehavior = NSWindowCollectionBehaviorCanJoinAllSpaces | NSWindowCollectionBehaviorStationary | NSWindowCollectionBehaviorIgnoresCycle;
     self.contentView = [[BDView alloc] init];
+	
+	time = 0.0;
+	lastFrame = [NSDate date];
+	tick = [NSTimer scheduledTimerWithTimeInterval:1.0/60.0 target:self selector:@selector(tick:) userInfo:nil repeats:YES];
     
     return self;
 }
 
+- (void)dealloc {
+	[tick invalidate];
+}
+
+- (void)tick:(NSTimer *)timer {
+	time += -[lastFrame timeIntervalSinceNow];
+	lastFrame = [NSDate date];
+	self.alphaValue = sin(time * 4.0) * .4 + .4;
+}
 
 #pragma mark -
 
@@ -42,14 +64,23 @@ static __strong BDWindow *sharedWindow;
     
     sharedWindow = [[self alloc] init];
     [sharedWindow orderFrontRegardless];
+	
+	if (!alertSound) {
+		alertSound = [NSSound soundNamed:@"redalert"];
+		alertSound.loops = YES;
+		[alertSound play];
+	}
 }
 
 + (void)hide {
     if (!sharedWindow)
         return;
     
-    [sharedWindow orderOut:nil];
+    [sharedWindow close];
     sharedWindow = nil;
+
+	[alertSound stop];
+	alertSound = nil;
 }
 
 
